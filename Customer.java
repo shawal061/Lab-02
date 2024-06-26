@@ -1,9 +1,6 @@
-// Represents a customer with their arrival time, service time, and whether they were served or not.
-
 public class Customer {
-
     private final long arrivalTime;
-    private final long serviceTime;
+    private final long serviceTime; // Original service time without speed-up adjustment
     private boolean served;
 
     public Customer(long arrivalTime, long serviceTime) {
@@ -27,5 +24,4 @@ public class Customer {
     public void setServed(boolean served) {
         this.served = served;
     }
-
 }
